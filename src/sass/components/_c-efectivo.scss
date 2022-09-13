@@ -1,0 +1,45 @@
+.c-efectivo {
+
+  &__titulo {
+    padding-bottom: .2rem;
+  }
+
+
+
+  &__monto {
+    background-color: transparent;
+  margin-top: 1rem;
+  height: 5rem;
+  width: 38rem;
+  border: 1px solid rgba($color-grey-light-1, 0.5);
+  border-radius: 1rem;
+  text-align: left;
+  
+  padding-left: 2rem;
+  font-size: 1.4rem;
+  font-family: $font-primary;
+
+  box-shadow: 0px 4px 4px 0px rgba(black, 0.05);
+
+  &:focus {
+    border: 1px solid $color-primary;
+    box-shadow: 0px 4px 4px 0px rgba(black, 0);
+    transition: all 400ms cubic-bezier(0.075, 0.82, 0.165, 1);
+    outline: none;
+  }
+  }
+
+  &__error {
+    //align-self: end;
+
+      color: red;
+      font-family: $font-primary;
+      font-size: 1.2rem;
+      font-weight: 500;
+      margin-left: .3rem;
+
+      &--transparent {
+        color: transparent;
+      }
+  }
+}

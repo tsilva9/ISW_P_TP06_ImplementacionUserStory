@@ -1,0 +1,21 @@
+.l-busca {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+  margin: 4rem;
+  height: 65vh;
+
+  @media only screen and (min-width: $bp-medium){
+    background-color: $color-grey-light-3;
+    box-shadow: .1rem 1rem 1rem .3rem rgba(black, 0.2);
+    border-radius: 1%;
+    height: 70vh;
+    width: 40vw;
+    align-items: center;
+    margin: auto;
+    padding: 3rem;
+   
+  }
+
+}

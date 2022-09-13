@@ -1,0 +1,61 @@
+// COLOR VARIABLES
+//$color-primary: #FF5B00;
+$color-primary: #f98948;
+$color-primary-dark: #2b3540;
+
+$color-grey-light-1: #313131;
+$color-grey-light-2: #dfdbd9;
+$color-grey-light-3: #fdfdfd;
+
+$color-secondary: #f9ea9a; 
+$color-tertiary: #9b8816;
+
+$color-grey-dark-1: #54483a;
+$color-grey-dark-2: #6d5d4b;
+
+// Breakpoint Variables
+$bp-largest: 75em; //1200px
+$bp-large: 62.5em; //1000px
+$bp-medium: 50em; //800px
+$bp-small: 37.5em; //600px
+
+// FONT VARIABLES
+$font-primary: "Helvetica", serif;
+
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 10px / 16px = 62.5% -> 1rem = 10px
+
+  @media only screen and (max-width: $bp-largest) {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: $font-primary;
+  font-weight: 300;
+  line-height: 1.6;
+  overflow-x: hidden;
+  transition: background-color .8s ease-out;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button { 
+      -webkit-appearance: none; 
+      margin: 0; 
+}
+
+input[type=number] { 
+  -moz-appearance: textfield;
+  appearance: textfield;
+  margin: 0; 
+}

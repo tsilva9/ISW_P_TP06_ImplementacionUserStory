@@ -1,0 +1,93 @@
+.c-checkout {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  animation: on--checkout--1 cubic-bezier(0.82, 0, 0.31, 0.99) 1000ms;
+    animation-fill-mode: forwards; 
+
+  &__titulo {
+    color: $color-secondary;
+    //margin: auto;
+    align-self: center;
+    
+    padding-top: 5rem;
+  }
+
+  &__svg {
+    enable-background:new 0 0 37 37;
+    animation: tick--animate--1 cubic-bezier(0.82, 0, 0.31, 0.99) 2000ms;
+    height: 30rem;
+    align-self: center;
+    margin-top: 20rem;
+    //margin: auto;
+
+
+  }
+  &__path {
+    fill:none;
+    //stroke:white;
+    stroke: $color-secondary;
+    stroke-width:3;
+    stroke-linejoin:round;
+    stroke-miterlimit:10;
+
+    &--circ{
+      opacity: 0;
+      stroke-dasharray: 130;
+      stroke-dashoffset: 130;
+      -webkit-transition: all 1s;
+      -moz-transition: all 1s;
+      -ms-transition: all 1s;
+      -o-transition: all 1s;
+      transition: all 1s;
+
+      animation: tick--animate--1 cubic-bezier(0.82, 0, 0.31, 0.99) 2000ms;
+      animation-fill-mode: forwards; 
+  }
+
+  }
+  &__polyline {
+    fill:none;
+    //stroke:white;
+    stroke: $color-secondary;
+    stroke-width:3;
+    stroke-linejoin:round;
+    stroke-miterlimit:10;
+
+    &--tick{
+      stroke-dasharray: 50;
+      stroke-dashoffset: 50;
+      -webkit-transition: stroke-dashoffset 1s 0.5s ease-out;
+      -moz-transition: stroke-dashoffset 1s 0.5s ease-out;
+      -ms-transition: stroke-dashoffset 1s 0.5s ease-out;
+      -o-transition: stroke-dashoffset 1s 0.5s ease-out;
+      transition: stroke-dashoffset 1s 0.5s ease-out;
+
+      animation: tick--animate--1 cubic-bezier(0.82, 0, 0.31, 0.99) 2000ms;
+      animation-fill-mode: forwards; 
+  }
+  }
+
+  
+
+
+
+}
+
+@keyframes on--checkout--1 {
+  0% {
+    background-color: transparent;
+  }
+
+  100% {
+    background-color: $color-primary;
+  }
+}
+
+@keyframes tick--animate--1 {
+  100% {
+    opacity: 1;
+    stroke-dashoffset: 0;
+  }
+}

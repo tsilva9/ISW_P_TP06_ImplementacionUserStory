@@ -1,0 +1,32 @@
+.c-nav {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+  align-items: center;
+
+  height: 10rem;
+  overflow: hidden;
+  padding: 2rem 1rem;
+
+  z-index: 7;
+  &__flecha {
+    height: 5rem;
+    width: 5rem;
+    filter: invert(56%) sepia(98%) saturate(470%) hue-rotate(329deg) brightness(102%) contrast(95%);
+  }
+
+  &__bars {
+    height: 5rem;
+    width: 5rem;
+    margin-right: 1rem;
+    filter: invert(56%) sepia(98%) saturate(470%) hue-rotate(329deg) brightness(102%) contrast(95%);
+  }
+
+  &__logo {
+    width: 17rem;
+    height: 17rem;
+    filter: brightness(0) saturate(100%) invert(56%) sepia(98%) saturate(470%) hue-rotate(329deg) brightness(102%) contrast(95%);
+ 
+  }
+}

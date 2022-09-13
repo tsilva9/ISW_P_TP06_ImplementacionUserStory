@@ -1,0 +1,125 @@
+.c-descripcion {
+  display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
+  margin: 4rem;
+  height: 65vh;
+
+
+  @media only screen and (min-width: $bp-medium){
+    background-color: $color-grey-light-3;
+    box-shadow: .1rem 1rem 1rem .3rem rgba(black, 0.2);
+    border-radius: 1%;
+    width: 40vw;
+    height: 70vh;
+    align-items: center;
+    margin: auto;
+    padding: 3rem;
+   
+  }
+  @media only screen and (min-width: $bp-small){
+        
+  }
+
+  &__label {
+    font-size: 3rem;
+    font-family: $font-primary;
+    font-weight: 400;
+  }
+
+  &__textarea {
+    font-size: 1.5rem;
+    font-family: $font-primary;
+    font-weight: 400;
+    margin-top: 2rem;
+    width: 100%;
+    padding: 1rem;
+    background-color: transparent;
+
+    border: 1px solid black ;
+    border-radius: 1.4rem;
+    resize: none;
+
+    &::placeholder {
+      color: $color-grey-light-1;
+    }
+
+    &:focus {
+      outline: none;
+      border: 1px solid $color-primary ;
+    }
+
+  }
+
+  &__button {
+    display: flex;
+    margin-top: 2rem;
+    background-color: #ffffff;
+    border: 1px dashed black;
+    background-color: transparent;
+
+    cursor: pointer;
+
+    width: 100%;
+    //text-align: left;
+
+    font-size: 1.9rem;
+    padding: 1rem;
+    border-radius: 1.4rem;
+    
+
+    align-items: center;
+    justify-content: space-between;
+
+    &-is-active {
+      background-color: $color-grey-light-3;
+      border: 1px solid black;
+    }
+    
+  }
+
+  &__p{
+    color: $color-grey-light-1;
+  }
+
+  &__camera {
+    //margin-left: 15rem;
+    align-self: flex-end;
+    height: 2.7rem;
+    width: 2.7rem;
+  }
+
+  &__image {
+    font-size: 1.5rem;
+    font-family: $font-primary;
+    font-weight: 400;
+    display: none;
+    margin-top: 2rem;
+
+  }
+
+  &__error{
+    color: red;
+    font-family: $font-primary;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-left: .3rem;
+
+    @media only screen and (min-width: $bp-small){
+      align-self: flex-start;
+      font-size: 1.5rem;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 50vh;
+ 
+}
+
+
+}

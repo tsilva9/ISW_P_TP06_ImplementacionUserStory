@@ -1,0 +1,138 @@
+.c-form-direccion {
+display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, min-content);
+    grid-row-gap: 0rem;
+    grid-column-gap: 1rem;
+    height: 40vh;
+
+    &__label {
+      grid-column: 1 / 5;
+      grid-row: 1 / 2;
+      font-size: 3rem;
+      font-family: $font-primary;
+      font-weight: 400;
+
+      padding-bottom: 1rem;
+    }
+
+    &__calle {
+      grid-column: 1 / 4;
+      grid-row: 2 / 3;
+
+      border: 1px solid black;
+      border-radius: 1.4rem;
+      padding: 1rem;
+      height: 5rem;
+      background-color: transparent;
+
+
+      &:focus {
+        outline: none;
+        border: 1px solid $color-primary ;
+      }
+
+    }
+
+    &__error {
+      margin-left: .3rem;
+      
+      
+      font-family: $font-primary;
+      font-size: 1.2rem;
+      font-weight: 500;
+
+      padding-bottom: .5rem;
+      
+      color: red;
+
+      &--calle {
+        grid-column: 1 / 4;
+        grid-row: 3 / 4;
+      }
+
+      &--nro {
+        grid-column: 4 / 5;
+        grid-row: 3 / 4;
+      }
+
+      &--transparent {
+        color: transparent;
+      }
+    }
+
+    &__nro {
+      grid-column: 4 / 5;
+      grid-row: 2 / 3;
+      
+      background-color: transparent;
+      border: 1px solid black;
+      border-radius: 1.4rem;
+      padding: 1rem;
+      height: 5rem;
+      width: 13rem;
+
+      &:focus {
+        outline: none;
+        border: 1px solid $color-primary ;
+      }
+      
+    }
+
+    &__dropdown {
+      grid-column: 1 / 5;
+      grid-row: 4 / 5;
+      color: $color-grey-light-1;
+
+      background-color: transparent;
+      border: 1px solid black;
+      border-radius: 1.4rem;
+      padding: 1rem;
+      height: 6rem;
+
+      padding-bottom: .5rem;
+
+      &--disabled {
+        background-color: $color-grey-light-3;
+      }
+
+      &:focus {
+        outline: none;
+        border: 1px solid $color-primary ;
+      }
+      
+    }
+
+
+    &__observaciones {
+      font-size: 1.5rem;
+      font-family: $font-primary;
+      font-weight: 400;
+      margin-top: 2rem;
+      width: 100%;
+      padding: 1rem;
+      background-color: transparent;
+
+      height: 15rem;
+
+      border: 1px solid $color-grey-light-1;
+      border-radius: 1.4rem;
+      resize: none;
+
+      grid-column: 1 / 5;
+      grid-row: 5 / 6;
+
+
+      &::placeholder {
+        color: $color-grey-light-1;
+      }
+
+      &:focus {
+        outline: none;
+        border: 1px solid $color-primary ;
+      }
+
+    }
+
+  }

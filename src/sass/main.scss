@@ -1,0 +1,22 @@
+// BASE
+@import "base/base";
+@import "base/typography";
+
+//LAYOUT
+@import "layout/l-busca";
+@import "layout/l-app";
+@import "layout/l-entrega";
+@import "layout/l-resumen";
+
+//COMPONENTS
+@import "components/c-button";
+@import "components/c-checkout";
+@import "components/c-form-direccion";
+@import "components/c-total";
+@import "components/c-forma-pago";
+@import "components/c-efectivo";
+@import "components/c-tarjeta";
+@import "components/c-navbar";
+@import "components/c-recibida";
+@import "components/c-descripcion";
+@import "components/c-fecha-hora";

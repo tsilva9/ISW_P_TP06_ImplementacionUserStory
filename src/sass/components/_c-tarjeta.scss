@@ -1,0 +1,133 @@
+.c-tarjeta {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, min-content);
+
+  grid-column-gap: 2rem;
+
+  &__titulo {
+    padding-bottom: 1rem;
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+  }
+
+  &__numero {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+    align-self: start;
+
+    outline: none;
+    border: 1px solid rgba($color-grey-light-1, 0.5);
+    height: 4rem;
+    padding-left: 1rem;
+
+    font-size: 1.4rem;
+    font-family: $font-primary;
+    border-radius: 1rem;
+
+    &:focus {
+      border: 1px solid $color-primary;
+      box-shadow: 0px 4px 4px 0px rgba(black, 0);
+      transition: all 400ms cubic-bezier(0.075, 0.82, 0.165, 1);
+      outline: none;
+    }
+  }
+
+    &__nombre {
+      grid-column: 1 / -1;
+      grid-row: 4 / 5;
+      outline: none;
+      border: 1px solid rgba($color-grey-light-1, 0.5);
+      height: 4rem;
+      padding-left: 1rem;
+
+      font-size: 1.4rem;
+      font-family: $font-primary;
+      border-radius: 1rem;
+
+      &:focus {
+        border: 1px solid $color-primary;
+        box-shadow: 0px 4px 4px 0px rgba(black, 0);
+        transition: all 400ms cubic-bezier(0.075, 0.82, 0.165, 1);
+        outline: none;
+      }
+    }
+
+    &__fecha {
+      grid-column: 1 / 2;
+      grid-row: 6 / 7;
+      outline: none;
+      border: 1px solid rgba($color-grey-light-1, 0.5);
+      height: 4rem;
+      padding-left: 1rem;
+
+      font-size: 1.4rem;
+      font-family: $font-primary;
+      border-radius: 1rem;
+
+      &:focus {
+        border: 1px solid $color-primary;
+        box-shadow: 0px 4px 4px 0px rgba(black, 0);
+        transition: all 400ms cubic-bezier(0.075, 0.82, 0.165, 1); 
+      }
+    }
+
+    &__codigo {
+      grid-column: 2 / 3;
+      grid-row: 6 / 7;
+      outline: none;
+      border: 1px solid rgba($color-grey-light-1, 0.5);
+      height: 4rem;
+      padding-left: 1rem;
+
+      font-size: 1.4rem;
+      font-family: $font-primary;
+      border-radius: 1rem;
+
+      &:focus {
+        border: 1px solid $color-primary;
+        box-shadow: 0px 4px 4px 0px rgba(black, 0);
+        transition: all 400ms cubic-bezier(0.075, 0.82, 0.165, 1);
+        outline: none;
+      }
+
+    }
+    &__error {
+      color: red;
+      font-family: $font-primary;
+      font-size: 1.2rem;
+      font-weight: 500;
+      margin-left: .3rem;
+
+      &--nro {
+        grid-column: 1 / -1;
+        grid-row: 3 / 4;
+        align-self: end;  
+      }
+
+      &--nombre {
+        grid-column: 1 / -1;
+        grid-row: 5 / 6;
+        align-self: end;
+      }
+
+      &--fecha {
+        grid-column: 1 / 2;
+        grid-row: 7 / 8;
+        align-self: start;
+      }
+
+      &--cvv {
+        grid-column: 2 / 3;
+        grid-row: 7 / 8;
+        align-self: end;
+      }
+
+      &--transparent {
+        color: transparent
+      }
+
+  }
+
+
+  }
